@@ -18,6 +18,7 @@ class BlogController() {
     @CrossOrigin
     @GetMapping("entry/{id}")
     fun getBlogEntry(@PathVariable id: String): ResponseEntity<String> {
+        logger.info("Blog controller received API call: $id")
 
         logger.info("Returning id::$id")
         return ResponseEntity.ok(id)
