@@ -15,7 +15,7 @@ class BlogController() {
 
     val logger: Logger = LoggerFactory.getLogger("DoughkinsLogger")
 
-    @CrossOrigin()
+    @CrossOrigin
     @GetMapping("entry/{id}")
     fun getBlogEntry(@PathVariable id: String): ResponseEntity<String> {
 
